@@ -8,7 +8,7 @@ from airflow.utils.dates import days_ago
 def task_1():
     path = r'C:\****\****\****\***'
     files = os.listdir(path)
-    engine = create_engine('mysql+pymysql://root:*********@localhost:3306/cars_database')
+    engine = create_engine('mysql+pymysql://root:*********@localhost/cars_database')
     table_name = ['Sales_dim','dates_dim','cars_dim']
     for i in files:
     for j in table_name:
